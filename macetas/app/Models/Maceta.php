@@ -12,12 +12,14 @@ class Maceta extends Model
 
     protected $fillable = [
         'name',
+        'uuid',
         'file',
         'description',
         'color',
         'quantity',
         'material',
         'status',
+        'comment',
         'user_id',
     ];
 

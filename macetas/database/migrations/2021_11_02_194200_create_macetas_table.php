@@ -16,12 +16,14 @@ class CreateMacetasTable extends Migration
         Schema::create('macetas', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->uuid('uuid');
             $table->string('file');
             $table->string('description');
             $table->string('color');
             $table->string('quantity');
             $table->string('material');
             $table->string('status');
+            $table->text('comment');
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();

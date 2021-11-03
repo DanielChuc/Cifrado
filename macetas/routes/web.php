@@ -22,5 +22,5 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 })->name('dashboard');
 
 
-Route::get('macetas', [MacetaController::class,'index'])->name('macetas.index');
+Route::middleware(['auth:sanctum', 'verified'])->get('macetas', [MacetaController::class,'index'])->name('macetas.index');
 Route::post('macetas', [MacetaController::class,'store'])->name('macetas.store');

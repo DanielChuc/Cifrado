@@ -1,11 +1,7 @@
 <x-app-layout>
 
     <div>
-     
-        <link rel="stylesheet"
-            href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
-    
-    
+ 
         <section class="relative pt-12 bg-blueGray-50">
             <div class="items-center flex flex-wrap">
                 <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
